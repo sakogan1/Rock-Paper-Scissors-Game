@@ -17,6 +17,7 @@ main
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+
 }
 .rounds
 {   
@@ -147,3 +148,10 @@ sup
 {
     color:yellow;
 }
+@media only screen and (max-width: 576px) {
+    body,html,main,footer {
+      background-color: #000;
+      min-width: 100vw;
+      min-height: 100vh;
+    }
+  }
