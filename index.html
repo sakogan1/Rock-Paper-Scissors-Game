@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+    <header><h1>Rock Paper Scissors</h1> </header>
+    <main>
+    <div class="rounds" onclick="getRadioValue()">
+    
+        <p>how many rounds?</p>
+            <div class="div">
+            <input type="radio" id="five" value="5">
+                        <label for="five">5</label>
+            <input type="radio" id="ten" value="10">
+            <label for="ten">10</label>
+            </div>
+            <div class="divTwo">
+            <input type="radio" id="fifteen" value="15">
+            <label for="fifteen">15</label>
+            <input type="radio" id="twenty" value="20">
+            <label for="twenty">20</label>
+            </div>
+        </div>
+        <span id="infoText"></span>
+        <div class="score">
+    <div id="user" class="oben">user</div>
+    <div id="comp" class="oben">comp</div>
+    <span id="scoreUser">0</span>:<span id="scoreComp">0</span>
+</div>
+<div class="res">
+    <p>Let´s play.<br>
+    select how many rounds<br>
+     or Play Infinity!
+    </p>
+</div>
+
+<div class="selectMove" >
+<div class="select" id="rock">
+<img src="assets/img/rock.png" alt="rock" onclick="yourChoice1()">
+</div>
+
+<div class="select" id="paper">
+<img src="assets/img/paper.png" alt="paper"onclick="yourChoice3()" >
+</div>
+
+<div class="select" id="scissors">
+<img src="assets/img/scissors.png" alt="scissors"onclick="yourChoice2()" >
+</div>
+</div>
+<p>Make your move.</p>
+<p>Player One beginns!</p>
+<footer>
+    <a href="index.html">restart</a>
+</footer>
+<video autoplay muted loop id="myVideo">
+    <source src="assets/img/bg.mp4" type="video/mp4">
+  </video>
+</main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
